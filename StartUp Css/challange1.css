@@ -1,0 +1,51 @@
+/* Universal margin */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightcoral;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    padding: 20px;
+   
+}
+section img {
+    /* margin-left: 30px; */
+    width : 300px;
+    height: 250px;
+    /* height: 200px; */
+    /* padding: 10px; */
+    object-fit: cover;
+
+}
+
+.section {
+    background-color: rgb(94, 80, 91);
+    width: 300px;
+    /* padding: 15px; */
+    margin: 20px;
+    /* height: 400px; */
+}
+.date  {
+    padding: 10px;
+    text-decoration: tomato;
+    /* font-size: 20px; */
+    /* margin-left: 10px; */
+}
+.section h3 {
+    /* text-align: right; */
+    text-transform: uppercase;
+    padding-left: 30px;
+
+}
+
+.content p {
+    color: wheat;
+    padding: 30px;
+    margin-top: 10px;
+}
