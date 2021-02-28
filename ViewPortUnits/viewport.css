@@ -1,0 +1,9 @@
+/* img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+} */
+
+ img:last-of-type {
+     width: 50vmin;
+ }
