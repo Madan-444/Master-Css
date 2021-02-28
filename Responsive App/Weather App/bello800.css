@@ -1,0 +1,8 @@
+div.weather__temp {
+    flex-direction: column;
+    /* align-items: center; */
+}
+div.weather__temp > div {
+    display: flex;
+    justify-content: space-evenly;
+}
