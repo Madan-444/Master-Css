@@ -28,7 +28,7 @@ section img {
     background-color: rgb(94, 80, 91);
     width: 300px;
     /* padding: 15px; */
-    margin: 20px;
+    margin: 10px;
     /* height: 400px; */
 }
 .date  {
@@ -40,12 +40,12 @@ section img {
 .section h3 {
     /* text-align: right; */
     text-transform: uppercase;
-    padding-left: 30px;
+    padding-left: 15px;
 
 }
 
 .content p {
     color: wheat;
-    padding: 30px;
+    padding: 15px;
     margin-top: 10px;
 }
