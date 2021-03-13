@@ -1,0 +1,76 @@
+/* The grid container styling */
+.grid-container {
+    background-color: #ff7052;
+
+    display: grid;
+    height: 700px; /* to understand align-content value propeties only  */
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(2,150px);
+    gap: 25px;
+    /* Grid container properties  */
+    /* justify-content values properties for horizontal alignment are start| center | end | stretch(default)|                                 space-around| space-between|space evenly  */
+
+    /* justify-content: stretch; */
+    /* justify-content: start; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between;  */
+     /* justify-content: space-evenly; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+
+    /* align-content values properties for vertical alignment of items  */
+    
+    /* align-content: stretch; */
+    /* align-content: start; */
+    /* align-content: space-around; */
+    /* align-content: space-between;  */
+     /* align-content: space-evenly; */
+    /* align-content: end; */
+    /* align-content: center; */
+
+    /* place-content: <align-content justify-content > values properties is for shorthand for justify-content and align-content */
+    
+    /* place-content: stretch; */
+    /* place-content: start; */
+    /* place-content: start center; */
+    /* place-content: space-between;  */
+     /* place-content: space-evenly; */
+    /* align-content: end end; */
+    /* place-content: center; */
+}
+/* grid item styling  */
+.item {
+    background-color: #fcc006;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+.item-1 {
+    background-color: chartreuse;
+
+}
+.item-2 {
+    background-color: chocolate;
+
+}
+.item-3 {
+    background-color: cornflowerblue;
+
+}
+.item-4 {
+    background-color: olivedrab;
+}
+.item-5 {
+    background-color: darkorchid;
+}
+.item-6 {
+    background-color: darkseagreen;
+}
+.item-7 {
+    background-color: dimgray;
+}
+.item-8 {
+    background-color: yellow;
+}

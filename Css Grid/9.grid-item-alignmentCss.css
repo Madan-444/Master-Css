@@ -1,0 +1,55 @@
+/* The grid container styling */
+.grid-container {
+    background-color: #ff7052;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,150px);
+    gap: 25px;
+    /* Grid container properties  */
+    /* Justify items properties 
+      stretch (default) | start /end /center  */
+
+    justify-items: center;
+    /* Justify-items justify horizontally where as align-items justify vertically  */
+    align-items: center;
+    /* place-items: <align-items justify-items >is just a shorthand for justify items and align-items  */
+    place-items:center ;
+}
+
+/* grid item styling  */
+.item {
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+.item-1 {
+    background-color: chartreuse;
+
+}
+.item-2 {
+    background-color: chocolate;
+
+}
+.item-3 {
+    background-color: cornflowerblue;
+
+}
+.item-4 {
+    background-color: olivedrab;
+}
+.item-5 {
+    background-color: darkorchid;
+}
+.item-6 {
+    background-color: darkseagreen;
+}
+.item-7 {
+    background-color: dimgray;
+}
+.item-8 {
+    background-color: yellow;
+}
