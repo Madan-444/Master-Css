@@ -1,0 +1,42 @@
+/* The grid container styling */
+.grid-container {
+    background-color: #ff7052;
+
+    display: grid;
+    gap: 25px;
+
+    grid-template-columns: 150px 200px 250px 300px;
+}
+
+/* grid item styling  */
+.item {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+.item-1 {
+    background-color: chartreuse;
+}
+.item-2 {
+    background-color: chocolate;
+}
+.item-3 {
+    background-color: cornflowerblue;
+}
+.item-4 {
+    background-color: olivedrab;
+}
+.item-5 {
+    background-color: darkorchid;
+}
+.item-6 {
+    background-color: darkseagreen;
+}
+.item-7 {
+    background-color: dimgray;
+}
+.item-8 {
+    background-color: yellow;
+}

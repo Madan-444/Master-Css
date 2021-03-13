@@ -1,0 +1,54 @@
+/* The grid container styling */
+.grid-container {
+    background-color: #ff7052;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,150px);
+    gap: 15px;
+}
+
+/* grid item styling  */
+.item {
+    background-color: #fcc006; 
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+.item-1 {
+    background-color: chartreuse;
+    /* change horizontal position */
+    grid-row: 2 / 4;
+    /* grid-column: 3 / 4; */
+    /* spanning the item  */
+    grid-column: 3 / 5;
+    line-height: 300px;
+
+
+}
+.item-2 {
+    background-color: chocolate;
+    grid-row: 1 / span 3;
+}
+.item-3 {
+    background-color: cornflowerblue;
+
+}
+.item-4 {
+    background-color: olivedrab;
+}
+.item-5 {
+    background-color: darkorchid;
+}
+.item-6 {
+    background-color: darkseagreen;
+}
+.item-7 {
+    background-color: dimgray;
+}
+.item-8 {
+    background-color: yellow;
+}
