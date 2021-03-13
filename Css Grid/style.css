@@ -1,0 +1,21 @@
+/* Grid container  */
+.grid-container {
+    background-color: rgb(228, 209, 173);
+    display: grid;
+    /* The grid container properties  */
+    /* Grid template rows Properties  */
+    /* Properties values can be <track-size> length, percentages, viewport Units or fractions 
+    <line-name> is an arbitrary name of your choosing*/
+    grid-template-rows: 50px 5rem;
+        /* The grid container properties  */
+    /* Grid template column Properties  */
+    /* Properties values can be <track-size> length, percentages, viewport Units or fractions 
+    <line-name> is an arbitrary name of your choosing*/
+    grid-template-columns: 150px auto;
+}
+
+/* grid childrens  */
+
+.item {
+    background-color: #dac894;
+}

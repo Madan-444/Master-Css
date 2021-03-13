@@ -1,0 +1,32 @@
+/* The grid container  */
+.grid-container {
+    background-color: #ff7052;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    /* ----------------- The grid container propertis ----------  */
+    /* grid column / row gap properties  */
+    /* The properties values can be : 
+                (length, percentanges, viewport units fractions) */
+    /* old system  */
+    /* grid-column-gap: 5%;
+    grid-row-gap: 5%; */
+    /* Standard syntax  */
+    /* column-gap: 5%;
+    row-gap: 7%; */
+    /* short-hand for grid-column -gap properties  */
+    /* old syntax  */
+    /* grid-gap: 15px 25px;
+    grid-gap: 6% 3%; */
+    /* grid-gap: 5vh; */
+    /* standard syntax  */
+    gap: 5vh;
+
+
+}
+/* grid items  */
+
+/* The grid items properties  */
+.item {
+    background-color: #fcc006;
+}
