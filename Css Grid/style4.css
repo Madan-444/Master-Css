@@ -1,0 +1,24 @@
+/* The grid container  */
+.grid-container {
+    background-color: #ff7052;
+    display: grid;
+    /* grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px; */
+    /* ----------------- The grid container propertis ----------  */
+    /* The grid repeat function  */
+    /* grid-template-columns: repeat(4,150px); */
+    grid-template-rows: repeat(3,150px);
+    gap: 10px;
+    /* fr ie fractional unit in grid  */
+ grid-template-rows: repeat(3,1fr);
+ height: 800px; 
+ grid-template-columns: 1fr 2fr 2fr 1fr;
+
+
+}
+/* grid items  */
+
+/* The grid items properties  */
+.item {
+    background-color: #fcc006;
+}
