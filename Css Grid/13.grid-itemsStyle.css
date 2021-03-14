@@ -3,19 +3,10 @@
     background-color: #ff7052;
 
     display: grid;
-    grid-template-columns: repeat(4,150px);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,150px);
     gap: 25px;
     /* Grid container properties  */
-
-    /* grid auto rows property  */
-    /* grid-auto-rows: 150px; */
-    /* grid auto flows property row and column but row is default  */
-    grid-auto-flow: column;
-    /* the grid auto-columns properties  */
-    grid-auto-columns: 100px ;
-    
-
 }
 
 /* grid item styling  */
@@ -29,14 +20,22 @@
 
 .item-1 {
     background-color: chartreuse;
+    /* justify-self properties  => for horizontal change position
+                        stretch(default) | start | end | center */
+    /* justify-self: center; */
 
 }
 .item-2 {
     background-color: chocolate;
-
+    /* Align-self properties =-> for vertival change position
+                    stretch(default) | start| end |center */
+    align-self: center;
+    align-self: end;
 }
 .item-3 {
     background-color: cornflowerblue;
+    /* place-self properties => short hand properties for align-self and     justify-self */
+    place-self:start end;
 
 }
 .item-4 {
@@ -52,17 +51,5 @@
     background-color: dimgray;
 }
 .item-8 {
-    background-color: yellow;
-}
-.item-9 {
-    background-color: darkorchid;
-}
-.item-10 {
-    background-color: darkseagreen;
-}
-.item-11 {
-    background-color: dimgray;
-}
-.item-12 {
     background-color: yellow;
 }
