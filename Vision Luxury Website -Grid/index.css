@@ -47,5 +47,87 @@ body {
 .container {
     display: grid;
     grid-template-columns: [container-start] 1fr [center-start] repeat(10,[col-start] minmax(min-content, 11rem)[col-end])  [center-end] 1fr [container-end];
-    grid-template-rows: repeat(2,200px);
+    grid-template-rows: 100vh repeat(8,min-content)
+}
+
+/* -------------main Styling -------------- */
+/*---------------- Header Section ---------------- */
+header#header {
+    background-color: var(--color-primary);
+    grid-column: container-start / container-end;
+
+}
+
+/* Booking Content Section  */
+section#booking-content {
+    background-color: var(--color-secondary);
+    grid-column: center-start / col-end 6;
+    height: 400px;
+}
+/* Booking date Section  */
+section#booking-date {
+    background-color: var(--color-tertiary);
+    grid-column: col-end 6 / center-end ;
+    height: 400px;
+}
+/* Village section  */
+section#villas {
+    background-color: var(--color-primary);
+    grid-column: container-start / container-end;
+    height: 400px;
+}
+
+/* Motto section  */
+section#motto {
+    background-color: var(--color-secondary);
+    grid-column: container-start / container-end;
+    height: 400px;
+}
+/* Events content section  */
+section#events-content {
+    background-color: var(--color-tertiary);
+    grid-column: container-start / col-end 9;
+    height: 300px;
+}
+/* Events text section  */
+section#events-text {
+    background-color: var(--color-primary);
+    grid-column: col-start 10 / center-end ;
+    height: 300px;
+}
+/* --------Galary Text section  */
+section#gallery-text {
+    background-color: var(--color-secondary);
+    grid-column: center-start / col-end;
+    height: 300px;
+}
+/* --------Galary Carousel section  */
+section#gallery-carousel {
+    background-color: var(--color-primary);
+    grid-column: col-end / container-end;
+    height: 300px;
+}
+/* --------Feature content section  */
+section#features-content {
+    background-color: var(--color-secondary);
+    grid-column: container-start / col-end 9;
+    height: 400px;
+}
+/* --------Feature text section  */
+section#features-text {
+    background-color: var(--color-tertiary);
+    grid-column: col-start 10 / center-end;
+    height: 400px;
+}
+/* --------Testimonial section  */
+section#testimonials {
+    background-color: var(--color-primary);
+    grid-column: center-start / center-end;
+    height: 400px;
+}
+/* --------Footer section  */
+section#footer {
+    background-color: var(--color-tertiary);
+    grid-column: container-start / container-end;
+    height: 400px;
 }
