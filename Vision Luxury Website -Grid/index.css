@@ -122,8 +122,20 @@ header#header {
 
     display: grid;
     place-items: center;
+
+    animation: main-nav 5s;
 }
 
+@keyframes main-nav {
+    0% {
+        transform: translateX(90vw) rotate(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate();
+        opacity: 1;
+    }
+}
 /* Hamberger Lines  */
 .header__main-nav--hamburger > div {
     position: relative;
@@ -248,6 +260,60 @@ header#header {
     transform: scaleY(1);
 
 }
+
+/* The rest of the header section  */
+.header__logo__content {
+    display: grid;
+    grid-template-columns: 1fr minmax(30rem,1fr) 1fr;
+    grid-template-rows: min-content;
+    height: 90%;
+    justify-items: center;
+
+
+}
+.header__logo__content--logo {
+    grid-column: 2 / 3;
+}
+.header__logo__content--content {
+    grid-column: 1 / -1;
+    align-self: center;
+}
+.header__logo__content--content__title {
+    font-size: calc(2rem + 4vw);
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 2rem 0 calc(2rem + 2vw);
+}
+.header__logo__content--content__para {
+    font-size: calc(1rem + 2vw);
+    font-weight: 300;
+    /* color: black; */
+    padding: 2vh 2rem 6vh calc(2rem + 2vw);
+}
+.header__logo__content--content__link:link,
+.header__logo__content--content__link:visited {
+    margin-left: var(--font-size-title);
+    border: 0.2rem solid var(--color-tertiary);
+}
+.header__logo__content--content__link:link::before,
+.header__logo__content--content__link:visited::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-tertiary);
+    transform: scaleX(0);
+    transition: all 0.45s cubic-bezier(1, 0, 0, 1);
+    z-index: -1;
+}
+.header__logo__content--content__link:hover::before,
+.header__logo__content--content__link:active::before {
+    transform: scaleX(1);
+}
+
 /* ---------------------Booking Content Section  ----------------------------*/
 section#booking-content {
     background-color: var(--color-secondary);
