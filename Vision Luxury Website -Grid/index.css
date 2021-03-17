@@ -370,9 +370,39 @@ section#booking-content {
 
 /* Booking date Section  */
 section#booking-date {
-    background-color: var(--color-tertiary);
     grid-column: col-end 6 / center-end ;
-    height: 400px;
+    padding: var(--padding-section);
+    
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.booking-date__schedule {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2vw;
+    place-items: center;
+}
+.booking-date__schedule--arrival,
+.booking-date__schedule--departure,
+.booking-date__schedule--guest {
+    display: grid;
+    grid-row-gap: 3vh
+}
+.booking-date__schedule--arrival h5,
+.booking-date__schedule--departure h5,
+.booking-date__schedule--guest h5 {
+    font-size: calc(1rem + 1vw);
+    row-gap: 2vh;
+    text-align: center;
+}
+.booking-date__contact a {
+    font-size: calc(1.5rem + 1vw);
+    place-self: center;
+    color: var(--color-secondary);
+}
+.booking-date__contact p {
+    padding: 1rem;
+    color: var(--color-primary);
 }
 /* Village section  */
 section#villas {
