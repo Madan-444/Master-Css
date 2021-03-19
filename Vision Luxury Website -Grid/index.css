@@ -449,44 +449,49 @@ section#booking-date {
     color: var(--color-primary);
     font-weight: 500;
 }
-/* Village section  */
+/*------------------------- Village section ---------------------  */
 section#villas {
-    background-color: var(--color-primary);
     grid-column: container-start / container-end;
-    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 2rem;
+}
+div[class^="villas"] {
+    padding: 2rem;
 }
 
-/* Motto section  */
+/*-------------------------------- Motto section --------------------  */
 section#motto {
     background-color: var(--color-secondary);
     grid-column: container-start / container-end;
     height: 400px;
 }
-/* Events content section  */
+/* ------------------------ Events content section --------------------  */
 section#events-content {
     background-color: var(--color-tertiary);
     grid-column: container-start / col-end 9;
     height: 300px;
 }
-/* Events text section  */
+/*---------------------------------- Events text section ------------------------------- */
 section#events-text {
     background-color: var(--color-primary);
     grid-column: col-start 10 / center-end ;
     height: 300px;
 }
-/* --------Galary Text section  */
+/* -------------------------------Galary Text section -------------------------------------  */
 section#gallery-text {
     background-color: var(--color-secondary);
     grid-column: center-start / col-end;
     height: 300px;
 }
-/* --------Galary Carousel section  */
+/* ------------------------------------------Galary Carousel section ------------------------------  */
 section#gallery-carousel {
     background-color: var(--color-primary);
     grid-column: col-end / container-end;
     height: 300px;
 }
-/* --------Feature content section  */
+/* --------------------------------------------Feature content section -----------------------  */
 section#features-content {
     background-color: var(--color-secondary);
     grid-column: container-start / col-end 9;
