@@ -538,9 +538,35 @@ div[class^="villas"] a[class^="villas"]:active::before {
 }
 /*-------------------------------- Motto section --------------------  */
 section#motto {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     grid-column: container-start / container-end;
-    height: 400px;
+
+    padding: 10vh 3vw;
+}
+
+.motto__content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.motto__content--title {
+    font-size: var(--font-size-title);
+    padding: 0 2rem 1rem;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.motto__content--title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    height: 0.2rem;
+    width: 10%;
+    background-color: white;
+
 }
 /* ------------------------ Events content section --------------------  */
 section#events-content {
@@ -627,6 +653,7 @@ section#footer {
         font-size: 2rem;
     }
     /* Villas section  */
+    .motto__content--para,
     div[class^="villas"] p[class^="villas"] {
         font-size: calc(1.2rem + 1vw);
         /* margin: 1.5rem 0 4rem 0; */
