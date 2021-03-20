@@ -614,8 +614,22 @@ section#events-content > div:last-child {
 
 /*---------------------------------- Events text section ------------------------------- */
 section#events-text {
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
     grid-column: col-start 10 / center-end ;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+.events-text__content {
+    transform: rotate(0.25turn);
+}
+.events-text__content--title {
+    color: white;
+    font-size: var(--font-size-title);
+    font-weight: 500;
+    letter-spacing: 0.2rem;
 }
 /* -------------------------------Galary Text section -------------------------------------  */
 section#gallery-text {
