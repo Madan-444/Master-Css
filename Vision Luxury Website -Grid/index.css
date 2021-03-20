@@ -570,10 +570,45 @@ section#motto {
 }
 /* ------------------------ Events content section --------------------  */
 section#events-content {
-    background-color: var(--color-tertiary);
     grid-column: container-start / col-end 9;
-    height: 300px;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
+section#events-content > div {
+    padding: var(--padding-section);
+
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "para";
+    row-gap: 4vh;
+    align-items: center;
+    justify-items: start;
+
+}
+section#events-content > div h2[class*="title"] {
+    grid-area: title;
+    font-size: var(--font-size-title);
+    font-weight: 400;
+    color: white;
+}
+section#events-content > div p[class*="para"] {
+    grid-area: para;
+    font-weight: 500;
+}
+section#events-content > div:first-child {
+    background: linear-gradient(var(--color-tertiary-m-light),var(--color-tertiary-m-light)), url('img/Events/beach-party.jpg');
+}
+section#events-content > div:last-child {
+    background: linear-gradient(var(--color-tertiary-m-light),var(--color-tertiary-m-light)), url('img/Events/culture-discovery.jpg');
+}
+section#events-content > div:first-child,
+section#events-content > div:last-child {
+    background-size: cover;
+    background-position: center;
+}
+
 /*---------------------------------- Events text section ------------------------------- */
 section#events-text {
     background-color: var(--color-primary);
