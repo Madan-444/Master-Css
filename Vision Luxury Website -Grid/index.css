@@ -679,7 +679,7 @@ div.gallery-carousel__img-container {
 section#features-content {
     background-color: var(--color-secondary);
     grid-column: container-start / col-end 9;
-    height: 400px;
+
 }
 /* --------Feature text section  */
 section#features-text {
