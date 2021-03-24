@@ -1,0 +1,14 @@
+{
+  "name": "node-sass-installation",
+  "version": "1.0.0",
+  "description": "Node -sass intallation tutorial",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/style.scss up/css/style.css -w"
+  },
+  "author": "madan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
