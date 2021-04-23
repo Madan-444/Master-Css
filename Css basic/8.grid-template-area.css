@@ -1,0 +1,56 @@
+.grid-container {
+    background-color: brown;
+
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-areas: "header header header header header header"
+                        "section-1 section-1 section-2 section-2 section-3 section-3"
+                        ". section-4 section-4 section-4 section-4 ."
+                        "section-5 section-5 section-5 section-6 section-6 section-6"
+                        "footer footer footer footer footer footer";
+}
+
+/* Grid Items */
+section,
+header,
+footer {
+    background-color: burlywood;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+.header {
+    background-color: cornsilk;
+    grid-area: header;
+} 
+.section-1 {
+    background-color: cadetblue;
+    grid-area: section-1
+      
+}
+.section-2 {
+    background-color: rgb(42, 83, 85);
+    grid-area: section-2;
+}
+.section-3 {
+    background-color: rgb(175, 201, 104);
+    grid-area: section-3;
+}
+.section-4 {
+    background-color: rgb(80, 16, 122);
+    grid-area: section-4;
+}
+.section-5 {
+    background-color: rgb(188, 250, 16);
+    grid-area: section-5;
+}
+.section-6 {
+    background-color: rgb(175, 201, 104);
+    grid-area: section-6;
+}
+.footer {
+    background-color: darkgray;
+    grid-area: footer;
+} 

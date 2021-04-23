@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(227,232,238);
+    padding: 5vh 5vw;
+
+    border-top: calc(2px + 0.3vw) solid lightslategray;
+}
+a{
+    text-decoration: none;
+    color: #444;
+    margin: 0 2vw;
+}

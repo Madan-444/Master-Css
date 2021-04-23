@@ -1,0 +1,85 @@
+/* .grid-container {
+    background-color: rgb(142,121,90);
+
+
+    display: grid;
+
+    /* Grid template row properties in grid system */
+    /* grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 150px 150px 300px 1fr; */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px */
+    /* row-gap: 15px;
+    column-gap: 15px; */
+    /* gap: 10px; */
+
+    /* repeat function in Grid system */
+    /* grid-template-columns: 1fr 2fr 2fr 40% 1fr;
+    grid-template-rows: 100px 200px 100px;
+    grid-gap: 15px; */
+
+/* } */ 
+/* .item {
+    background-color: #fcc006;
+} */
+
+.grid-container {
+    background-color: rgb(142,121,90);
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,200px);
+    gap: 15px;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.item-1 {
+    background-color: blueviolet;
+    grid-column: 3/4;
+    grid-row: 2/ span 2;
+    z-index: 4;
+
+}
+.item-2 {
+    background-color: rgb(166, 139, 192);
+}
+.item-3 {
+    background-color: rgb(45, 175, 99);
+}
+.item-4 {
+    background-color: rgb(207, 184, 82);
+}
+.item-5 {
+    background-color: rgb(31, 29, 24);
+}
+.item-6 {
+    background-color: rgb(161, 138, 78);
+}
+.item-7 {
+    background-color: rgb(196, 21, 35);
+}
+.item-8 {
+    background-color: rgb(122, 94, 167);
+}
+.item-9 {
+    background-color: rgb(143, 10, 32);
+}
+.item-10 {
+    background-color: rgb(224, 216, 236);
+    grid-column: 2/4;
+    grid-row: 3/4;
+
+}
+.item-11 {
+    background-color: rgb(3, 61, 83);
+}
+.item-12 {
+    background-color: rgb(113, 197, 17);
+    line-height: 250px;
+}
