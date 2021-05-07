@@ -1,0 +1,50 @@
+.section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: blue;
+  padding: 50px;
+  margin-bottom: 10px;
+}
+
+.section-1__content:last-child {
+  margin-left: 200px;
+}
+
+.section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: purple;
+  padding: 50px;
+  margin-bottom: 0px;
+}
+
+.section-2__content:last-child {
+  margin-left: 0px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=mixinStyle.css.map */

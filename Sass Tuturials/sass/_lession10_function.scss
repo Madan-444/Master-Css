@@ -1,0 +1,28 @@
+@function color($color-name) {
+    @return map-get($colors,$color-name)
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    // background-color: map-get($colors,color-secondary);
+
+    &-container {
+        background-color: color(color-primary);
+        width: calc(20rem + 30vw);
+        height: 50vh;
+        padding: 2rem;
+        &__heading {
+            font-size: calc(2rem + 2vw);
+            letter-spacing: 1rem;
+            padding-bottom: 2rem;
+            color: color(color-heading);
+        }
+        &__para {
+            font-size: calc(1.5rem + .4vw);
+            color: color(color-tertary);
+        }
+    }
+}

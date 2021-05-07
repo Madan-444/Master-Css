@@ -1,0 +1,46 @@
+@mixin myStyle($color-name,$margin-value,$direction,$padding-left) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $color-name;
+    padding: 50px;
+
+    margin-bottom: $margin-value;
+
+    &__content:last-child {
+        margin-left: $padding-left;
+    }
+}
+
+.section-1 {
+    @include myStyle(blue,10px,row,200px);
+    
+}
+.section-2 {
+    @include myStyle(purple,0px,column,0px);
+}
+
+// another way
+
+// @mixin section-style() {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 50px;
+
+//     &__content:last-child {
+//         margin-left: 200px;
+//     }
+
+// }
+
+// .section-1 {
+//     @include section-style();
+//     margin-bottom: 10px;
+//     background-color: orange;
+// }
+// .section-2 {
+//     @include section-style();
+//     background-color: pink;
+// }
