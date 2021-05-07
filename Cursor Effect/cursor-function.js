@@ -2,6 +2,7 @@ console.log("Lets crack it.")
 
 let mouseCursor = document.querySelector('.cursor');
 let navLinks = document.querySelectorAll('.nav-links li');
+console.log("my navLinks from cursor",mouseCursor)
 
 window.addEventListener("mousemove",cursor)
 
@@ -11,6 +12,7 @@ function cursor(e) {
 }
 
 navLinks.forEach(link=> {
+    // console.log(mylinks for looping, link)
     link.addEventListener('mouseleave',()=> {
         mouseCursor.classList.remove('link-grow')
         link.classList.remove('hovered-link')
