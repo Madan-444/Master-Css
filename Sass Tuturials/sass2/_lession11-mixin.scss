@@ -1,25 +1,37 @@
-@mixin myStyle($color-name,$margin-value,$direction,$padding-left) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-    background-color: $color-name;
-    padding: 50px;
+// @mixin myStyle($color-name,$margin-value,$direction,$padding-left) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+//     background-color: $color-name;
+//     padding: 50px;
 
-    margin-bottom: $margin-value;
+//     margin-bottom: $margin-value;
 
-    &__content:last-child {
-        margin-left: $padding-left;
-    }
-}
+//     &__content:last-child {
+//         margin-left: $padding-left;
+//     }
+// }
 
-.section-1 {
-    @include myStyle(blue,10px,row,200px);
+// .section-1 {
+//     @include myStyle(blue,10px,row,200px);
+//     @include media-desktop {
+//         flex-direction: column;
+//         &__content:last-child {
+//             margin-left: 0px;
+//         }
+//     }
     
-}
-.section-2 {
-    @include myStyle(purple,0px,column,0px);
-}
+// }
+// .section-2 {
+//     @include myStyle(purple,0px,column,0px);
+//     @include media-desktop {
+//         flex-direction: row;
+//         &__content:last-child {
+//             margin-left: 50px;
+//         }
+//     }
+// }
 
 // another way
 
@@ -43,4 +55,29 @@
 // .section-2 {
 //     @include section-style();
 //     background-color: pink;
+// }
+
+// Example-2 mixins=> for appending stles and reuse it => one of the most uses cases is declearing media queries
+
+$bpDesktop: 1000px;
+@mixin media-desktop {
+    @media screen and (max-width: $bpDesktop) {
+        @content;
+    }
+}
+// .section-1 {
+//     @include media-desktop {
+//         flex-direction: column;
+//         &__content:last-child {
+//             margin-left: 0px;
+//         }
+//     }
+// }
+// .section-2 {
+//     @include media-desktop {
+//         flex-direction: row;
+//         &__content:last-child {
+//             margin-left: 50px;
+//         }
+//     }
 // }

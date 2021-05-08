@@ -1,0 +1,39 @@
+// One selector inherits style from another  styled selector to prevent repeatition of the code
+
+// There are two methods
+// Method -1 => using css selectors
+
+$colors: (
+    "color-white": #ffffff,
+    "color-primarty": hsla(0, 100%, 1%, 0.418),
+    "color-secondary": hsla(240, 100%, 50%, 0.534),
+);
+
+@function color($color-name) {
+    @return map-get($colors,$color-name)
+}
+
+.section-1 {
+    background-color: color(color-secondary);
+    &__content {
+        padding: 20px;
+        color: color(color-primarty);
+
+        &--title {
+            margin: 15px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            color: white;
+        }
+        &--para {
+            @extend .section-1__content--title;
+        }
+    }
+}
+.section-2 {
+    &__content {
+        &--para {
+            @extend .section-1__content--title;
+        }
+    }
+}
