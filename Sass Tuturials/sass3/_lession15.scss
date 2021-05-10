@@ -1,0 +1,19 @@
+// body {
+//     background-color: grey;
+// }
+@mixin section($size) {
+    width: $size;
+    height: $size;
+
+    @if ($size<200px) {
+        background-color: purple;
+    } @else if $size == 250px {
+        background-color: black;
+    } @else {
+        background-color: olivedrab;
+    }
+}
+
+section {
+    @include section(250px);
+}

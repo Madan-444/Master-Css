@@ -7,16 +7,16 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    div {
-        height: 30rem;
-        width: 50rem;
-        margin-bottom: 10px;
-        // padding-bottom: 10px;
-        // border: 2px black solid;s
-        background-color: blue;
-    }
-}
+// section {
+//     div {
+//         height: 30rem;
+//         width: 50rem;
+//         margin-bottom: 10px;
+//         // padding-bottom: 10px;
+//         // border: 2px black solid;s
+//         background-color: blue;
+//     }
+// }
 // section {
 //     .ballet {
 //         background-image: url('../img/ballet.jpg');
@@ -70,11 +70,12 @@ section {
 // }
 
 // second method
-@each $pic-dives in (ballet,cat,gramophone,sparrow,sunset,turkey) {
-    .#{$pic-dives} {
-        background-image: url('../img/#{$pic-dives}.jpg');
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
+// @each $pic-dives in (ballet,cat,gramophone,sparrow,sunset,turkey) {
+//     .#{$pic-dives} {
+//         background-image: url('../img/#{$pic-dives}.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-position: center;
+//     }
+// }
+@import 'lession15';

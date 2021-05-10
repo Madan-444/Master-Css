@@ -9,58 +9,9 @@ body {
           box-sizing: border-box;
 }
 
-section div {
-  height: 30rem;
-  width: 50rem;
-  margin-bottom: 10px;
-  background-color: blue;
-}
-
-.ballet {
-  background-image: url("../img/ballet.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cat {
-  background-image: url("../img/cat.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.gramophone {
-  background-image: url("../img/gramophone.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.sparrow {
-  background-image: url("../img/sparrow.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.sunset {
-  background-image: url("../img/sunset.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.turkey {
-  background-image: url("../img/turkey.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+section {
+  width: 250px;
+  height: 250px;
+  background-color: black;
 }
 /*# sourceMappingURL=eachRule.css.map */
