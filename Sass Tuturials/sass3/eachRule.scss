@@ -1,0 +1,80 @@
+body {
+    background-color: yellow;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    div {
+        height: 30rem;
+        width: 50rem;
+        margin-bottom: 10px;
+        // padding-bottom: 10px;
+        // border: 2px black solid;s
+        background-color: blue;
+    }
+}
+// section {
+//     .ballet {
+//         background-image: url('../img/ballet.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     .cat {
+//         background-image: url('../img/cat.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     .gramophone {
+//         background-image: url('../img/gramophone.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     .sparrow {
+//         background-image: url('../img/sparrow.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     .sunset {
+//         background-image: url('../img/sunset.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     .turkey {
+//         background-image: url('../img/turkey.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+
+// }
+
+// method -1
+// $bg-pics: (ballet,cat,gramophone,sparrow,sunset,turkey);
+// @each $pics-divs in $bg-pics {
+//     .#{$pics-divs} {
+//         background-image: url('../img/#{$pics-divs}.jpg');
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         background-position: center;
+
+//     }
+// }
+
+// second method
+@each $pic-dives in (ballet,cat,gramophone,sparrow,sunset,turkey) {
+    .#{$pic-dives} {
+        background-image: url('../img/#{$pic-dives}.jpg');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
