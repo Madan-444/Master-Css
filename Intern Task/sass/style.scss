@@ -1,0 +1,385 @@
+@import 'reset';
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+
+
+.container {
+    background: color(#F2F2F2);
+    display: grid;
+    grid-template-columns: 1fr repeat(10, minmax(min-content,110px)) 1fr;
+    grid-template-rows: 100vh repeat(7,min-content);
+    
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* *********************** HEADER SECTION ********************************************** */ 
+.header {
+    background: linear-gradient(rgba(24, 22, 22, 0.747)),url("../img/img_hero-image.png");
+    object-fit: cover;
+    grid-column: 1 / 13;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &_main-nav {
+        @include myFlexBox(space-between,flex-start,row);
+        margin: 50px 10px 0 70px;
+        // margin-left: 50px;
+        &__links {
+            ul {
+                @include myFlexBox(flex-end,flex-start,row);
+                
+                a {
+                    margin-right: 50px;
+                    color: #e7e3e3;
+                    list-style: none;
+                    font-size: 1.1rem;
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+            }
+        }
+        &__logo--container {
+            // background-color: white;
+            display: flex;
+            // background-color: white;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            &--text p:first-child {
+                color:#88C542;
+                padding:  0 10px;
+            }
+            &--text p:last-child {
+                color:#88C542;
+                padding:  0 10px;
+                letter-spacing: 10px;
+            }
+        }
+    }
+}
+
+.main-content__container {
+    height: 70vh;
+    // width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        margin-top: 70px;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        &--heading {
+            font-size: calc(1.8rem + 2vw);
+            padding-bottom: 10px;
+        }
+        &__para {
+            margin-top: 30px;
+            height: 100px;
+            width: 35vw;
+            padding: 10px;
+            @include myFlexBox(center,center,column);
+            
+            &--box {            
+                background-color: #27AD6C;
+                box-shadow: 0px 2px 40px rgba(72, 45, 230, 0.753);
+                border-radius: 4px;
+                margin-top: 50px;
+                padding: 15px;
+                 &:hover {
+                    transition: box-shadow 1s ease-in-out;
+                    box-shadow: 0px 2px 40px rgba(255, 255, 255, 0.308);
+                 }
+                a {
+                    color: white;
+                }
+                i {
+                    padding: 0 0 0 10px;
+                    font-size: 0.8rem;
+                    &:hover {
+                        transition: transform 1s;
+                        color: black;
+                        transform: rotate(360deg);
+                   
+                    }
+
+                }
+            
+            }
+            
+        }
+    }
+
+}
+/* *********************** REQUIREMENT SECTION ********************************************** */ 
+.requirements {
+    padding: 80px 0;
+    grid-column: 2 / 12;
+    height: min-content;
+    background-color: white;
+    #{&}-container {
+        @include myFlexBox(center,center,column);
+        &_header p {
+            padding-bottom: 40px;
+            font-size: 3rem;
+            color: #9B9B9B;
+        }
+    }
+}
+
+.requirements_card {
+    display: flex;
+    justify-content: space-around;
+    width: 85vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    &__1,
+    &__2,
+    &__3 {
+        padding: 10px;
+        width: 300px;
+        @include myFlexBox(center,center,column);
+        &--para {
+            @include myFlexBox(center,center,column);
+            padding-top: 20px;
+            h5 {
+                padding-bottom: 10px;
+                color: #27AD6C;
+            }
+            p {
+                text-align: center;
+                color: #4A4A4A;
+            }
+        }
+    }
+}
+
+
+/* *********************** RESOURCES SECTION ********************************************** */ 
+.resources {
+    grid-column: 2 /6 ;
+    // background-color: salmon;
+    min-height: 50vh;
+    #{&}--heading {
+        // background-color: pink;
+        h5 {
+            font-size: 48px;
+            color: #9B9B9B;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    }
+    .resources_items {
+        @include myFlexBox(flex-start,center,row);
+        margin: 50px 0;
+        i {
+            color:#D2D9CA;
+            font-size: 2rem;
+        }
+        p {
+            margin-left: 20px;
+            color: #27AD6C;
+            font-size: 1.1rem;
+        }
+    }
+    #{&}_VAR--text {
+        margin-bottom: 50px;
+        p {
+            color: #27AD6C;
+            font-size: 1.2rem;
+        }
+    }
+}
+/* *********************** VERTICAL LINE SECTION ********************************************** */ 
+.v_line {
+    grid-column: 6 / 8;
+    // background-color: rgb(61, 50, 51);
+    &__xt {
+        // height: 200px;
+        // width: 100px;
+        @include myFlexBox(center,center,column);
+        &--line {
+            height: 400px;
+            width: 2px;
+            background: #88C542;
+            border-radius: 10px;
+
+
+            
+        }
+    }
+}
+/* *********************** LFF SECTION ********************************************** */ 
+.LFF {
+    grid-column: 8 / 12;
+    // background-color: blue;
+    #{&}_heading {
+        h5 {
+            font-size: 48px;
+            color: #9B9B9B;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    }
+
+    #{&}_items {
+        // margin-bottom: 20px;
+        margin: 50px 0;
+
+    }
+    #{&}_items p:first-child {
+        color:#9B9B9B;
+        font-size: 1.1rem;
+    }
+    #{&}_items p:last-child {
+        color: #27AD6C;
+    }
+    #{&}_vau--text {
+        color: #27AD6C;
+        font-size: 1.2rem;
+    }
+}
+/* *********************** ICON HORIZONTAL LINE SECTION ********************************************** */ 
+.icon_horizontal--line {
+    grid-column: 5 /9 ;
+    margin: 60px 0;
+    // background-color: red;
+    @include myFlexBox(center,center,row);
+
+    &_1 {
+        height: 2px;
+        width: 100px;
+        background-color: #88C542;
+        border-radius: 10px;
+    }
+    img {
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+        margin: 0 20px;
+    }
+}
+/* *********************** GALLERY SECTION ********************************************** */ 
+.gallery {
+    grid-column: 2 / 12;
+    @include myFlexBox(flex-start,center,column);
+    &--heading {
+        p {
+            font-size: calc(1rem + 2vw);
+            color: #9B9B9B;
+        }
+    }
+    &--para {
+        color: #9B9B9B;
+        margin: 20px 0;
+    }
+    &--photos {
+        @include myFlexBox(center,center,row);
+        flex-wrap: wrap;
+        img {
+            width: 366px;
+            width: 366px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+    }
+}
+/* *********************** SERVICES SECTION ********************************************** */ 
+.services {
+    grid-column: 1 / 13;
+    background-color: #423633;
+    &_container {
+
+        @include myFlexBox(center,center,column);
+        &--heading {
+            margin: 50px 0;
+            p {
+                font-size: calc(1rem + 2vw);
+                color: rgb(41, 27, 27);
+            }
+        }
+        &--items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__box {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                height: min-content;
+                width: calc(250px + 10vw);
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+                &--text {
+                    h4 {
+                        font-size: 1.5rem;
+                        color: white;
+                        padding-left: 10px;
+                    }
+                    p {
+                        color: rgba(253, 175, 175, 0.39);
+                        padding: 10px 10px;
+
+                    }
+
+                }
+            }
+        }
+        &--button {
+            cursor: pointer;
+            @extend .main-content__container__header__para--box;
+        }
+        &--icon {
+            margin: 30px 0;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+}
+/* *********************** FOOTER SECTION ********************************************** */ 
+
+.footer {
+    grid-column: 1 / 13;
+    height: 50px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+ 
+    &_container {
+        width: 90vw;
+        @include myFlexBox(space-between,center,row);
+        &--copyright {
+            p {
+                color: white;
+            }
+
+        }
+        &--links {
+            @extend .header_main-nav__links;
+            text-transform: uppercase;
+        }
+    }
+
+}
