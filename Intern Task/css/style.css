@@ -165,6 +165,7 @@ a {
 
 .main-content__container__header__para--box, .services_container--button {
   background-color: #27AD6C;
+  cursor: pointer;
   -webkit-box-shadow: 0px 2px 40px rgba(72, 45, 230, 0.753);
           box-shadow: 0px 2px 40px rgba(72, 45, 230, 0.753);
   border-radius: 4px;
@@ -173,12 +174,14 @@ a {
 }
 
 .main-content__container__header__para--box:hover, .services_container--button:hover {
-  -webkit-transition: -webkit-box-shadow 1s ease-in-out;
-  transition: -webkit-box-shadow 1s ease-in-out;
-  transition: box-shadow 1s ease-in-out;
-  transition: box-shadow 1s ease-in-out, -webkit-box-shadow 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-box-shadow: 0px 2px 40px rgba(255, 255, 255, 0.308);
           box-shadow: 0px 2px 40px rgba(255, 255, 255, 0.308);
+}
+
+.main-content__container__header__para--box:hover a, .services_container--button:hover a {
+  color: rgba(24, 14, 14, 0.644);
 }
 
 .main-content__container__header__para--box a, .services_container--button a {
@@ -310,7 +313,7 @@ a {
   margin-bottom: 20px;
 }
 
-.resources .resources_items {
+.resources_items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,18 +327,25 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 50px 0;
+  margin: calc(30px + 1.5vw) 0;
 }
 
-.resources .resources_items i {
+.resources_items i {
   color: #D2D9CA;
   font-size: 2rem;
 }
 
-.resources .resources_items p {
+.resources_items p {
   margin-left: 20px;
   color: #27AD6C;
   font-size: 1.1rem;
+}
+
+.resources_line, .LFF_line {
+  height: 1px;
+  width: 100%;
+  background-color: #88C542;
+  opacity: 0.25;
 }
 
 .resources .resources_VAR--text {
@@ -345,6 +355,7 @@ a {
 .resources .resources_VAR--text p {
   color: #27AD6C;
   font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 /* *********************** VERTICAL LINE SECTION ********************************************** */
@@ -371,8 +382,8 @@ a {
 }
 
 .v_line__xt--line {
-  height: 400px;
-  width: 2px;
+  height: calc(500px);
+  width: 1.5px;
   background: #88C542;
   border-radius: 10px;
 }
@@ -392,7 +403,7 @@ a {
 }
 
 .LFF .LFF_items {
-  margin: 50px 0;
+  margin: calc(30px + 1.3vw) 0;
 }
 
 .LFF .LFF_items p:first-child {
@@ -405,6 +416,7 @@ a {
 }
 
 .LFF .LFF_vau--text {
+  margin-top: 20px;
   color: #27AD6C;
   font-size: 1.2rem;
 }
@@ -431,7 +443,7 @@ a {
 }
 
 .icon_horizontal--line_1 {
-  height: 2px;
+  height: 1px;
   width: 100px;
   background-color: #88C542;
   border-radius: 10px;
@@ -531,7 +543,7 @@ a {
 
 .services_container--heading p {
   font-size: calc(1rem + 2vw);
-  color: #291b1b;
+  color: #FFFFFF;
 }
 
 .services_container--items {
@@ -565,7 +577,7 @@ a {
 }
 
 .services_container--items__box--text h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   padding-left: 10px;
 }
@@ -577,6 +589,10 @@ a {
 
 .services_container--button {
   cursor: pointer;
+}
+
+.services_container--button p {
+  color: wheat;
 }
 
 .services_container--icon {
@@ -625,6 +641,7 @@ a {
 }
 
 .footer_container--links {
+  margin-right: -30px;
   text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
