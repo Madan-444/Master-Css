@@ -1,0 +1,7 @@
+$mobileBreakPoint: 400px;
+
+@mixin media-mobile {
+    @media screen and (max-width: $mobileBreakPoint) {
+        @content;
+    }
+}

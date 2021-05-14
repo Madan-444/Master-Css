@@ -1,10 +1,21 @@
-// const hamburgerContainer = document.querySelector(".header_main-nav");
-// const hamburger = document.querySelector(".header_main-nav--hamburger");
-// const links = document.querySelectorAll(".header_main-nav__links li");
+let mouseCursor = document.querySelector('.cursor');
+let navLinks = document.querySelectorAll('.mouse-effect li');
 
-// hamburger.addEventListener("click", () => {
-//   hamburgerContainer.classList.toggle("clicked");
-//   links.forEach((link) => {
-//     link.classList.toggle("fade");
-//   });
-// });
+window.addEventListener("mousemove",cursor);
+
+function cursor(e) {
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
+}
+
+navLinks.forEach(link=> {
+    link.addEventListener("mouseleave",()=> {
+        mouseCursor.classList.remove("link-grow")
+        mouseCursor.classList.remove("hovered-link");
+    })
+
+    link.addEventListener('mouseover',()=> {
+        mouseCursor.classList.add("link-grow");
+        mouseCursor.classList.add("hovered-link");
+    })
+});

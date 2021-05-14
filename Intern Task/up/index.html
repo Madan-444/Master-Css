@@ -5,267 +5,284 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="/css/style.css">
     <title>Frontend Intern Task</title>
 </head>
-<body class='container'>
+<body >
 
     <!-- *********************** HEADER SECTION ********************************************** -->
+    <div class="cursor"></div>
 
-    <header class="header">
-        <nav class="header_main-nav">
-            <div class="header_main-nav__logo--container">
-                <div class="header_main-nav__logo--icon"><img src="../img/ic_separator_frontend-ninja.png" alt="logo-icon"></div>
-                <div class="header_main-nav__logo--container--text">
-                    <p>FRONTEND</p>
-                    <p>NINJA</p>
+    <div class="container">
+        <header class="header">
+            <nav class="header_main-nav">
+                <div class="header_main-nav__logo--container">
+                    <div class="header_main-nav__logo--icon"><img src="../img/ic_separator_frontend-ninja.png" alt="logo-icon"></div>
+                    <div class="header_main-nav__logo--container--text">
+                        <p>FRONTEND</p>
+                        <p>NINJA</p>
+                    </div>
+                </div>
+                <div class="header_main-nav__links">
+                    <ul class="header_main-nav__links--ul mouse-effect">
+                        <li class="links"><a href="#">Home</a></li>
+                        <li class="links"><a href="#">About</a></li>
+                        <li class="links"><a href="#">Work</a></li>
+                        <li class="links"><a href="#">Contact</a></li>
+                        <li class="links"><a href="#"><img src="../img/ic_search.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-content__container">
+                <div class="main-content__container__header">
+                    <p class="main-content__container__header--heading">Are you a frontend ninja?</p>
+                    <div class="main-content__container__header__para">
+                        <p>Frontend ninjas are the superheroes who bring life into designs. We're looking for frontend ninjas with knack of amazing attention to detail.</p>
+                        <p>Are you One?</p>
+                       <div class="main-content__container__header__para--box">
+                        <div class="main-content__container__header__para__button">
+                            <a href="#" class="main-content__container__header__para__button__link">APPLY NOW<i class="far fa-caret-circle-right"></i> </a>
+                        </div>
+                       </div>
+                    </div>
                 </div>
             </div>
-            <div class="header_main-nav__links">
-                <ul>
-                    <li class="links"><a href="#">Home</a></li>
-                    <li class="links"><a href="#">About</a></li>
-                    <li class="links"><a href="#">Work</a></li>
-                    <li class="links"><a href="#">Contact</a></li>
-                    <li class="links"><a href="#"><img src="../img/ic_search.png" alt=""></a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="main-content__container">
-            <div class="main-content__container__header">
-                <p class="main-content__container__header--heading">Are you a frontend ninja?</p>
-                <div class="main-content__container__header__para">
-                    <p>Frontend ninjas are the superheroes who bring life into designs. We're looking for frontend ninjas with knack of amazing attention to detail.</p>
-                    <p>Are you One?</p>
-                   <div class="main-content__container__header__para--box">
-                    <div class="main-content__container__header__para__button">
-                        <a href="#" class="main-content__container__header__para__button__link">APPLY NOW<i class="far fa-caret-circle-right"></i> </a>
+        </header>
+        
+    
+            <!-- *********************** REQUIREMENT SECTION ********************************************** -->
+    
+        <section  class="requirements">
+            <div class="requirements-container">
+                <div class="requirements-container_header">
+                    <p>What you should have</p>
+                </div>
+                <div class="requirements_card">
+                    <div data-aos="fade-right" class="requirements_card__1">
+                        <img src="../img/img_requirements_3.png" alt="card-1">
+                        <div class="requirements_card__1--para">
+                            <h5>Attention to details</h5>
+                            <p>We look for attention to detail in our candidates. As a frontend intern, you should have a superpowers of looking into details of a design.</p>
+                        </div>
+        
                     </div>
-                   </div>
+                    <div data-aos="zoom-in" class="requirements_card__2">
+                        <img src="../img/img_requirements_2.png" alt="card-1">
+                        <div class="requirements_card__2--para">
+                            <h5>Frontend tech knowledge</h5>
+                            <p>You must be equipped with a passion to learn and explore new technologies. You are not afraid to implement a new framework or language.</p>
+                        </div>
+        
+                    </div>
+                    <div data-aos="fade-left" class="requirements_card__3">
+                        <img src="../img/img_requirements_1.png" alt="card-1">
+                        <div class="requirements_card__3--para">
+                            <h5>Love for technology</h5>
+                            <p>We eat, sleep and breathe tehcnology. You should have love for technology. </p>
+                        </div>
+        
+                    </div>
+                   
+        
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
     
-
-        <!-- *********************** REQUIREMENT SECTION ********************************************** -->
-
-    <section class="requirements">
-        <div class="requirements-container">
-            <div class="requirements-container_header">
-                <p>What you should have</p>
+            <!-- *********************** RESOURCES SECTION ********************************************** -->
+    
+        <section data-aos="flip-right"  class="resources">
+            <div class="resources--heading">
+                <h5>Resources</h5>
             </div>
-            <div class="requirements_card">
-                <div class="requirements_card__1">
-                    <img src="../img/img_requirements_3.png" alt="card-1">
-                    <div class="requirements_card__1--para">
-                        <h5>Attention to details</h5>
-                        <p>We look for attention to detail in our candidates. As a frontend intern, you should have a superpowers of looking into details of a design.</p>
-                    </div>
+            <div class="resources_items">
+                <i class="far fa-caret-circle-right"></i>
+                <p>Designer News</p>
+            </div>
+            <div class="resources_line"></div>
+            <div class="resources_items">
+                <i class="far fa-caret-circle-right"></i>
+                <p>Designer News</p>
+            </div>
+            <div class="resources_line"></div>
+            <div class="resources_items">
+                <i class="far fa-caret-circle-right"></i>
+                <p>Designer News</p>
+            </div>
+            <div class="resources_line"></div>
+            <div class="resources_VAR--text">
+                <p>View all Resources</p>
+            </div>
+        </section>
     
+            <!-- *********************** LINE SECTION ********************************************** -->
+    
+        <section class="v_line">
+            <div class="v_line__xt">
+                <div class="v_line__xt--line"></div>
+            </div>
+        </section>
+    
+            <!-- *********************** LATEST FROM FRONTEND SECTION ********************************************** -->
+    
+        <section data-aos="flip-left" class="LFF">
+            <div class="LFF_heading">
+                <h5>Latest from frontend</h5>
+            </div>
+            <div class="LFF_items">
+                <p>JavaScript Performance Optimization Tips: An Overview</p>
+                <p>13 hours ago</p>
+            </div>
+            <div class="LFF_line"></div>
+            <div class="LFF_items">
+                <p >Designing a dashboard for Concourse</p>
+                <p >20 November, 2017</p>
+            </div>
+            <div class="LFF_line"></div>
+            <div class="LFF_items">
+                <p >JSRobot – Learn to code in JavaScript by playing a game</p>
+                <p >17 November, 2017</p>
+            </div>
+            <div class="LFF_line"></div>
+            <div class="LFF_vau--text">
+                <p>View all Updates</p>
+            </div>
+        </section>
+    
+            <!-- *********************** ICON HORIZONTAL LINE SECTION ********************************************** -->
+    
+        <section class="icon_horizontal--line">
+            <div class="icon_horizontal--line_1"></div>
+            <img src="../img/ic_separator_frontend-ninja@2x.png" alt="">
+            <div class="icon_horizontal--line_1"></div>
+        </section>
+        <section class="gallery">
+           <div data-aos="fade-up" class="gallery--heading"><p>Some random food photos</p></div>
+           <p data-aos="flip-left" class="gallery--para">Just because ¯\_(ツ)_/¯</p>
+           <div data-aos="zoom-in" class="gallery--photos">
+               <img src="../img//img_food-photos_6.png" alt="">
+               <img src="../img//img_food-photos_2.png" alt="">
+               <img src="../img//img_food-photos_4.png" alt="">
+               <img src="../img//img_food-photos_3.png" alt="">
+               <img src="../img//img_food-photos_5.png" alt="">
+               <img src="../img//img_food-photos_1.png" alt="">
+           </div>
+    
+        </section>
+    
+            <!-- *********************** SERVICES SECTION ********************************************** -->
+    
+        <section class="services">
+            <div class="services_container">
+                <div data-aos="zoom-in-up" class="services_container--heading">
+                    <p>What we provide</p>
                 </div>
-                <div class="requirements_card__2">
-                    <img src="../img/img_requirements_2.png" alt="card-1">
-                    <div class="requirements_card__2--para">
-                        <h5>Frontend tech knowledge</h5>
-                        <p>You must be equipped with a passion to learn and explore new technologies. You are not afraid to implement a new framework or language.</p>
+                <div class="services_container--items">
+                    <div data-aos="slide-right" class="services_container--items__box">
+                        <img src="../img/ic_tailored.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Tailored objectives</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
                     </div>
-    
+                    <div class="services_container--items__box">
+                        <img src="../img/ic_senior-team.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Support from senior team</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div data-aos="slide-left" class="services_container--items__box">
+                        <img src="../img/ic_learning.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>learning environment</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div data-aos="slide-right" class="services_container--items__box">
+                        <img src="../img/ic_lunch.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Delicious lunch</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div class="services_container--items__box">
+                        <img src="../img/ic_travel.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Travel expenses/ stipend</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div data-aos="slide-left" class="services_container--items__box">
+                        <img src="../img/ic_workweek.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Five working week</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div data-aos="slide-right" class="services_container--items__box">
+                        <img src="../img/ic_time.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Flexible time possibility</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div class="services_container--items__box">
+                        <img src="../img/ic_full-time.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Full-timer possibility</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                    <div data-aos="slide-left" class="services_container--items__box">
+                        <img src="../img/ic_retreats.png" alt="">
+                        <div class="services_container--items__box--text">
+                            <h4>Socials, retreats, team dinners</h4>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="requirements_card__3">
-                    <img src="../img/img_requirements_1.png" alt="card-1">
-                    <div class="requirements_card__3--para">
-                        <h5>Love for technology</h5>
-                        <p>We eat, sleep and breathe tehcnology. You should have love for technology. </p>
-                    </div>
-    
+                <div class="services_container--button">
+                    <p>APPLY NOW <i class="far fa-caret-circle-right"></i> </a></p>
+                </div>
+                <div class="services_container--icon">
+                    <img src="../img/ic_separator_frontend-ninja@2x.png" alt="">
                 </div>
                
+            </div>
+        </section>
     
-            </div>
-        </div>
-    </section>
-
-        <!-- *********************** RESOURCES SECTION ********************************************** -->
-
-    <section class="resources">
-        <div class="resources--heading">
-            <h5>Resources</h5>
-        </div>
-        <div class="resources_items">
-            <i class="far fa-caret-circle-right"></i>
-            <p>Designer News</p>
-        </div>
-        <div class="resources_line"></div>
-        <div class="resources_items">
-            <i class="far fa-caret-circle-right"></i>
-            <p>Designer News</p>
-        </div>
-        <div class="resources_line"></div>
-        <div class="resources_items">
-            <i class="far fa-caret-circle-right"></i>
-            <p>Designer News</p>
-        </div>
-        <div class="resources_line"></div>
-        <div class="resources_VAR--text">
-            <p>View all Resources</p>
-        </div>
-    </section>
-
-        <!-- *********************** LINE SECTION ********************************************** -->
-
-    <section class="v_line">
-        <div class="v_line__xt">
-            <div class="v_line__xt--line"></div>
-        </div>
-    </section>
-
-        <!-- *********************** LATEST FROM FRONTEND SECTION ********************************************** -->
-
-    <section class="LFF">
-        <div class="LFF_heading">
-            <h5>Latest from frontend</h5>
-        </div>
-        <div class="LFF_items">
-            <p>JavaScript Performance Optimization Tips: An Overview</p>
-            <p>13 hours ago</p>
-        </div>
-        <div class="LFF_line"></div>
-        <div class="LFF_items">
-            <p >Designing a dashboard for Concourse</p>
-            <p >20 November, 2017</p>
-        </div>
-        <div class="LFF_line"></div>
-        <div class="LFF_items">
-            <p >JSRobot – Learn to code in JavaScript by playing a game</p>
-            <p >17 November, 2017</p>
-        </div>
-        <div class="LFF_line"></div>
-        <div class="LFF_vau--text">
-            <p>View all Updates</p>
-        </div>
-    </section>
-
-        <!-- *********************** ICON HORIZONTAL LINE SECTION ********************************************** -->
-
-    <section class="icon_horizontal--line">
-        <div class="icon_horizontal--line_1"></div>
-        <img src="../img/ic_separator_frontend-ninja@2x.png" alt="">
-        <div class="icon_horizontal--line_1"></div>
-    </section>
-    <section class="gallery">
-       <div class="gallery--heading"><p>Some random food photos</p></div>
-       <p class="gallery--para">Just because ¯\_(ツ)_/¯</p>
-       <div class="gallery--photos">
-           <img src="../img//img_food-photos_6.png" alt="">
-           <img src="../img//img_food-photos_2.png" alt="">
-           <img src="../img//img_food-photos_4.png" alt="">
-           <img src="../img//img_food-photos_3.png" alt="">
-           <img src="../img//img_food-photos_5.png" alt="">
-           <img src="../img//img_food-photos_1.png" alt="">
-       </div>
-
-    </section>
-
-        <!-- *********************** SERVICES SECTION ********************************************** -->
-
-    <canvas id="canvas1" class="services">
-        <div class="services_container">
-            <div class="services_container--heading">
-                <p>What we provide</p>
-            </div>
-            <div class="services_container--items">
-                <div class="services_container--items__box">
-                    <img src="../img/ic_tailored.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Tailored objectives</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
+            <!-- *********************** FOOTER SECTION ********************************************** -->
+    
+        <section class="footer">
+            <div class="footer_container">
+                <div class="footer_container--copyright">
+                    <p>© Copyright 2017</p>
                 </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_senior-team.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Support from senior team</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_learning.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>learning environment</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_lunch.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Delicious lunch</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_travel.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Travel expenses/ stipend</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_workweek.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Five working week</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_time.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Flexible time possibility</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_full-time.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Full-timer possibility</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="services_container--items__box">
-                    <img src="../img/ic_retreats.png" alt="">
-                    <div class="services_container--items__box--text">
-                        <h4>Socials, retreats, team dinners</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
+                <div class="footer_container--links">
+                    <ul class="mouse-effect">
+                        <li class="links"><a href="#">Home</a></li>
+                        <li class="links"><a href="#">About</a></li>
+                        <li class="links"><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="services_container--button">
-                <p>APPLY NOW <i class="far fa-caret-circle-right"></i> </a></p>
-            </div>
-            <div class="services_container--icon">
-                <img src="../img/ic_separator_frontend-ninja@2x.png" alt="">
-            </div>
-           
-        </div>
-    </canvas>
+        </section>
+        <script src="myScript.js"></script>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+  // Global settings:
+   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 400, // offset (in px) from the original trigger point
+//   delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+//   easing: 'ease', // default easing for AOS animations
 
-        <!-- *********************** FOOTER SECTION ********************************************** -->
-
-    <section class="footer">
-        <div class="footer_container">
-            <div class="footer_container--copyright">
-                <p>© Copyright 2017</p>
-            </div>
-            <div class="footer_container--links">
-                <ul>
-                    <li class="links"><a href="#">Home</a></li>
-                    <li class="links"><a href="#">About</a></li>
-                    <li class="links"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <script src="particle.js"></script>
+});
+    </script>
 </body>
 </html>
