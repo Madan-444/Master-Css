@@ -2,13 +2,14 @@
 @import 'variables';
 @import 'functions';
 @import 'mixins';
-
+@import 'media-Tab';
 
 .container {
     background: color(#F2F2F2);
     display: grid;
     grid-template-columns: 1fr repeat(10, minmax(min-content,110px)) 1fr;
     grid-template-rows: 100vh repeat(7,min-content);
+    overflow-x: hidden;
     
 }
 
@@ -26,27 +27,48 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 
     &_main-nav {
+        @include media-Tablet {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         @include myFlexBox(space-between,flex-start,row);
-        margin: 50px 10px 0 70px;
+        margin: 50px 10px 0 calc(20px + 5vw);
         &__links {
             ul {
-                @include myFlexBox(flex-end,flex-start,row);
+                @include myFlexBox(flex-end,center,row);
                 
                 a {
-                    margin-right: 50px;
+
+                    margin-right: calc(10px + 5vw);
                     color: #e7e3e3;
                     list-style: none;
                     font-size: 1.1rem;
                     &:hover {
                         color: red;
                     }
+
+
+                }
+                @include media-Tablet {
+                    padding-top: calc(10px + 1vw);
                 }
 
             }
         }
         &__logo--container {
+            @include media-Tablet {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
             // background-color: white;
             display: flex;
             // background-color: white;
@@ -73,18 +95,26 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media-Tablet {
+        // margin-right: calc(10px + 5vw); 
+        padding-right: 100px;
+    }
 
     &__header {
         margin-top: 70px;
-        height: 50vh;
+        // background-color: blue;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         color: white;
         &--heading {
-            font-size: calc(1.8rem + 2vw);
+            font-size: calc(10px + 4vw);
             padding-bottom: 10px;
+            @include media-Tablet {
+                margin-top: calc(50px + 5vw);
+                margin-left: 40px;
+            }
         }
         &__para {
             margin-top: 30px;
@@ -92,6 +122,10 @@ a {
             width: 35vw;
             padding: 10px;
             @include myFlexBox(center,center,column);
+            @include media-Tablet {
+                margin-top: calc(50px + 5vw);
+                width: 70vw;
+            }
             
             &--box {            
                 background-color: #27AD6C;
@@ -100,12 +134,13 @@ a {
                 border-radius: 4px;
                 margin-top: 50px;
                 padding: 15px;
+                transition: all 0.5s ease-in-out;
                 
                  &:hover {
-                    
-                    transition: all 1s ease-in-out;
                     box-shadow: 0px 2px 40px rgba(255, 255, 255, 0.308);
+
                     a {
+                        transition: color 0.5s ease-in-out;
                         color: rgba(24, 14, 14, 0.644);
                     }
 
@@ -124,44 +159,61 @@ a {
                     }
 
                 }
+                @include media-Tablet {
+                    margin-left: calc(-50px + 5vw);
+                    // width: 70vw;
+                }
             
+            }
+            @include media-Tablet {
+                margin-left: calc(50px + 5vw);
+                width: 70vw;
             }
             
         }
+        
     }
 
 }
 /* *********************** REQUIREMENT SECTION ********************************************** */ 
 .requirements {
-    padding: 80px 0;
+
     grid-column: 2 / 12;
     height: min-content;
     background-color: white;
     #{&}-container {
         @include myFlexBox(center,center,column);
         &_header p {
-            padding-bottom: 40px;
-            font-size: 3rem;
+            // font-size: 
+            margin: calc(43px + 1vw) 0;
+            font-size: calc(20px + 3vw);
             color: #9B9B9B;
         }
     }
 }
 
 .requirements_card {
-    display: flex;
-    justify-content: space-around;
     width: 85vw;
-    flex-direction: row;
+    @include myFlexBox(space-around,flex-start,row);
     flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+
     &__1,
     &__2,
     &__3 {
-        padding: 10px;
         width: 300px;
         @include myFlexBox(center,center,column);
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            box-shadow: 0px 2px 40px rgba(27, 23, 23, 0.308);
+            transform: rotate(5deg);
+        }
         &--para {
+
             @include myFlexBox(center,center,column);
+            &:hover {
+                padding: 10px;
+            }
             padding-top: 20px;
             h5 {
                 padding-bottom: 10px;
@@ -178,11 +230,16 @@ a {
 
 /* *********************** RESOURCES SECTION ********************************************** */ 
 .resources {
+    margin-top: calc(20px + 2vw);
+    padding-left: 20px;
+    @include media-Tablet {
+        padding: 50px;
+    }
     grid-column: 2 /6 ;
     min-height: 50vh;
     #{&}--heading {
         h5 {
-            font-size: 48px;
+            font-size: calc(10px + 3vw);
             color: #9B9B9B;
             font-weight: 300;
             margin-bottom: 20px;
@@ -219,23 +276,52 @@ a {
 /* *********************** VERTICAL LINE SECTION ********************************************** */ 
 .v_line {
     grid-column: 6 / 8;
+    margin-top: calc(20px + 2vw);
+
     &__xt {
+        // @include media-Tablet {
+        //     grid-column: 4 / 9;
+        //     // @include myFlexBox(center,center,column);
+        // }
         @include myFlexBox(center,center,column);
+        @include media-Tablet {
+            @include myFlexBox(center,center,row);
+
+        }
         &--line {
             height: calc(500px);
             width: 1.5px;
             background: #88C542;
-            border-radius: 10px;            
+            border-radius: 10px;  
+            @include media-Tablet {
+                height: 1.5px;
+                width: calc(200px + 40vw);
+                margin-left: -30px;
+                margin-top: -60px;
+            }          
         }
     }
+    @include media-Tablet {
+        grid-column: 3 / 8;
+
+    }
+
 }
 /* *********************** LFF SECTION ********************************************** */ 
 .LFF {
     grid-column: 8 / 12;
-    // background-color: blue;
+    margin-top: calc(20px + 2vw);
+    @include media-Tablet {
+        margin-left: 30px;
+        grid-column: 2 / 8;
+        display: flex;
+        padding-left: calc(1rem + 2vw);
+        align-items: flex-start;
+        flex-direction: column;
+    }
     #{&}_heading {
         h5 {
-            font-size: 48px;
+            font-size: calc(10px + 3vw);
             color: #9B9B9B;
             font-weight: 300;
             margin-bottom: 20px;
@@ -256,6 +342,7 @@ a {
     }
     &_line {
         @extend .resources_line;
+        width: calc(200px + 10vw);
     }
     #{&}_vau--text {
         margin-top: 20px;
@@ -266,6 +353,9 @@ a {
 /* *********************** ICON HORIZONTAL LINE SECTION ********************************************** */ 
 .icon_horizontal--line {
     grid-column: 5 /9 ;
+    @include media-Tablet {
+        grid-column: 4 / 7;
+    }
     margin: 60px 0;
     // background-color: red;
     @include myFlexBox(center,center,row);
@@ -306,37 +396,85 @@ a {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            position: relative;
+            z-index: 1;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                transform: scale(0.9);
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(230, 230, 41, 0.733);
+                z-index: 3;
+                transform: scale(0);
+            }
+            &:hover::before {
+                transform: scale(1);
+            }
+            @include media-Tablet{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
         }
         
     }
 }
 /* *********************** SERVICES SECTION ********************************************** */ 
+#canvas1 {
+
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#42363359,#4236334b);
+    // z-index: -1;
+}
 .services {
     grid-column: 1 / 13;
     background-color: #423633;
+    position: relative;
+
     &_container {
 
         @include myFlexBox(center,center,column);
+        // flex-wrap: wrap;
         &--heading {
             margin: 50px 0;
             p {
-                font-size: calc(1rem + 2vw);
+                font-size: calc(1rem + 3vw);
                 color: #FFFFFF;
             }
+        }
+        @include media-Tablet {
+            margin-left: -20px;
         }
         &--items {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            flex-direction: row;
             &__box {
                 padding: 20px;
                 display: flex;
                 justify-content: center;
                 height: min-content;
                 width: calc(250px + 10vw);
+                transition: all 0.5s ease-in-out;
                 img {
                     height: 50px;
                     width: 50px;
+                }
+                &:hover {
+                    // box-shadow: ;
+
+                    transform: scale(0.9);
+                    box-shadow: 0px 2px 40px rgba(255, 255, 255, 0.308);
+                    // background-color: linear-gradient(black,white);
                 }
                 &--text {
                     h4 {
@@ -375,6 +513,9 @@ a {
 .footer {
     grid-column: 1 / 13;
     height: 50px;
+    @include media-Tablet{
+        height: 100px;
+    }
     background-color: #333333;
     display: flex;
     justify-content: center;
@@ -382,6 +523,10 @@ a {
     &_container {
         width: 90vw;
         @include myFlexBox(space-between,center,row);
+        @include media-Tablet {
+            @include myFlexBox(center,center,column);
+
+        }
         &--copyright {
             p {
                 color: white;
