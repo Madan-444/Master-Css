@@ -161,11 +161,15 @@ table, th, td {
   width: 8vw;
 }
 
-.title {
+.client_no {
   width: 11vw;
 }
 
-.phone {
+.client_name {
+  width: 16vw;
+}
+
+.mobile {
   width: 12vw;
 }
 
@@ -177,8 +181,8 @@ table, th, td {
   width: 10vw;
 }
 
-.date {
-  width: 15vw;
+.mail_chimp {
+  width: 10vw;
 }
 
 .actions {
