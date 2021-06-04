@@ -1,0 +1,309 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+p {
+  color: #4d5573;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.setting {
+  margin: 100px 0 0 300px;
+  padding: 20px;
+  min-height: 1350px;
+  width: 68.88%;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: white;
+  border: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+}
+.lead_reminder_date {
+  display: flex;
+  &--text {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  & > p {
+    width: 60%;
+    margin-left: 5%;
+    input {
+      width: 10%;
+      height: 34px;
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555555;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      outline: none;
+    }
+    span {
+      margin-left: 30px;
+    }
+  }
+}
+.quote_expire_date {
+  margin-top: 20px;
+  @extend .lead_reminder_date;
+  &--text {
+    @extend .lead_reminder_date--text;
+  }
+}
+
+.invoice_expire_date {
+  margin-top: 20px;
+  @extend .lead_reminder_date;
+  &--text {
+    @extend .lead_reminder_date--text;
+  }
+}
+.gst_setting {
+  margin-top: 20px;
+  display: flex;
+  &--text {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  & > p {
+    width: 60%;
+    margin-left: 5%;
+  }
+}
+.input-2 {
+  margin: 0 4px 0 30px;
+}
+.input-3 {
+  margin: 0 4px 0 30px;
+}
+.additional_field_1 {
+  margin-top: 20px;
+  display: flex;
+  &--text {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  & > p {
+    margin-left: 5%;
+    position: relative;
+    input {
+      height: 34px;
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555555;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      outline: none;
+    }
+    span {
+      margin-left: 45px;
+    }
+  }
+}
+.checkbox_input {
+  margin-left: 30px;
+  position: absolute;
+}
+.field_1_description {
+  margin-top: 20px;
+  display: flex;
+  &--text {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  & > p {
+    margin-left: 5%;
+    width: 50%;
+    textarea {
+    width: 100%;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555555;
+      font-family: "Open Sans", Arial, sans-serif;
+      background-color: #ffffff;
+      background-image: none;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+    }
+  }
+}
+.additional_field_2 {
+    @extend .additional_field_1;
+    &--text {
+        @extend .additional_field_1--text;
+    }
+}
+.field_2_description {
+    @extend .field_1_description;
+    &--text {
+        @extend .field_1_description--text;
+    }
+}
+.additional_field_3 {
+    @extend .additional_field_1;
+    &--text {
+        @extend .additional_field_1--text;
+    }
+}
+.creditcard_paymentCharge {
+    @extend .additional_field_1;
+    &--text {
+        @extend .additional_field_1--text;
+    }
+}
+.payment_option_invoice {
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.payment_via_phone {
+    margin-top: 20px;
+    margin-left: 30%;
+    span {
+        margin-left: 5px;
+    }
+}
+.enter_phone_no {
+    margin-top: 20px;
+    display: flex;
+    &--text {
+      width: 25%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    & > p {
+        margin-left: 5%;
+        width: 50%;
+        input {
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555555;
+            font-family: "Open Sans", Arial, sans-serif;
+            background-color: #ffffff;
+            background-image: none;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+    }
+}
+.payment_via_online {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.payment_via_paypal {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.bank_transfer {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.BSB {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.account_number {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.mail_to {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.mail_to_address {
+    @extend .enter_phone_no;
+    &--text {
+        @extend .enter_phone_no--text;
+    }
+}
+.display_payment_option {
+    margin-top: 20px;
+    display: flex;
+    &--text {
+      width: 25%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    & > p {
+        margin-left: 5%;
+    }
+}
+
+// styling submit and reset buttons
+.submit_n_reset {
+    margin: 0px 0 50px 300px;
+    padding: 20px;
+    min-height: 50px;
+    width: 68.88%;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+    background-color: rgba(226, 214, 214, 0.747);
+    border: 1px solid #eeeeee;
+    &--container {
+        // background-color: red;
+        margin-left: 30%;
+        & button:first-of-type {
+            color: #ffffff;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            background-color: #0088cc;
+            border: 1px solid #cccccc;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          & button:last-of-type {
+              margin-left: 10px;
+            padding: 6px 12px;
+            color: #333333;
+            background-color: #ffffff;
+            border-color: #cccccc;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            border: 1px solid #cccccc;
+            cursor: pointer;
+          }
+      
+    }
+}

@@ -1,0 +1,323 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.e_c_i {
+  margin: 100px 0 0 300px;
+  min-height: 1000px;
+  width: 68.88%;
+  background-color: #fdfdfd;
+  padding: 20px;
+}
+
+.e_c_i--container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.e_c_i--container > p {
+  font-size: 1.8rem;
+  color: #555555;
+}
+
+.account_info, .profile_info {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account_info--name, .account_info--email_n_password, .profile_info--company_name_n_email, .profile_info--order_n_account_email, .profile_info--addrs1_n_addrs2, .profile_info--state_n_abn, .profile_info--country_n_phone, .profile_info--postCode_n_check, .profile_info--logo_n_replaceLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account_info--name__para, .account_info--email_n_password__para, .profile_info--company_name_n_email__para, .profile_info--order_n_account_email__para, .profile_info--addrs1_n_addrs2__para, .profile_info--state_n_abn__para, .profile_info--postCode_n_check__para, .profile_info--country_n_phone__para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #555555;
+}
+
+.account_info--name__para input, .account_info--email_n_password__para input, .profile_info--company_name_n_email__para input, .profile_info--order_n_account_email__para input, .profile_info--addrs1_n_addrs2__para input, .profile_info--state_n_abn__para input, .profile_info--postCode_n_check__para input, .profile_info--country_n_phone__para input {
+  margin-left: 30px;
+  background-color: #ffffff;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.account_info--name > p, .account_info--email_n_password > p, .profile_info--company_name_n_email > p, .profile_info--order_n_account_email > p, .profile_info--addrs1_n_addrs2 > p, .profile_info--state_n_abn > p, .profile_info--country_n_phone > p, .profile_info--postCode_n_check > p, .profile_info--logo_n_replaceLogo > p {
+  margin-right: 70px;
+  color: #555555;
+}
+
+.account_info--name > p input, .account_info--email_n_password > p input, .profile_info--company_name_n_email > p input, .profile_info--order_n_account_email > p input, .profile_info--addrs1_n_addrs2 > p input, .profile_info--state_n_abn > p input, .profile_info--country_n_phone > p input, .profile_info--postCode_n_check > p input, .profile_info--logo_n_replaceLogo > p input {
+  background-color: #ffffff;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.account_info--name > p span, .account_info--email_n_password > p span, .profile_info--company_name_n_email > p span, .profile_info--order_n_account_email > p span, .profile_info--addrs1_n_addrs2 > p span, .profile_info--state_n_abn > p span, .profile_info--country_n_phone > p span, .profile_info--postCode_n_check > p span, .profile_info--logo_n_replaceLogo > p span {
+  margin-right: 30px;
+}
+
+.account_info--email_n_password {
+  margin-top: 20px;
+}
+
+.horizontal--line, .horizontal--line__last {
+  height: 1px;
+  width: 100%;
+  background-color: #cccccc;
+  opacity: 0.5;
+  margin: 50px 0;
+}
+
+.profile_info--order_n_account_email {
+  margin-top: 20px;
+}
+
+.profile_info--order_n_account_email__para {
+  margin-top: 0px;
+}
+
+.profile_info--addrs1_n_addrs2 {
+  margin-top: 20px;
+}
+
+.profile_info--addrs1_n_addrs2__para {
+  margin-top: 0px;
+}
+
+.profile_info--state_n_abn, .profile_info--country_n_phone {
+  margin-top: 20px;
+}
+
+.profile_info--state_n_abn__para select {
+  width: 210px;
+  margin-left: 30px;
+  background-color: #ffffff;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.profile_info--postCode_n_check {
+  margin-top: 20px;
+}
+
+.profile_info--postCode_n_check__para {
+  margin-top: 0px;
+}
+
+.profile_info--postCode_n_check > p {
+  margin-top: 7px;
+  margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile_info--postCode_n_check > p span {
+  margin: -7px 5px 0 0;
+}
+
+.profile_info--country_n_phone {
+  margin-top: 20px;
+}
+
+.profile_info--country_n_phone__para select {
+  width: 210px;
+  margin-left: 30px;
+  background-color: #ffffff;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.profile_info--logo_n_replaceLogo {
+  margin-top: 20px;
+}
+
+.profile_info--logo_n_replaceLogo__para {
+  margin-left: 70px;
+  color: #555555;
+}
+
+.profile_info--logo_n_replaceLogo__para img {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.profile_info--logo_n_replaceLogo__para div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile_info--logo_n_replaceLogo > p input {
+  width: 210px;
+}
+
+.checkEmail_n_addmore_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkEmail_n_addmore_contacts p {
+  font-size: 1.8rem;
+  color: #555555;
+}
+
+.checkEmail_n_addmore_contacts button {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0088cc;
+  border-color: #0088cc;
+  color: #ffffff !important;
+  margin-top: 10px;
+  padding: 0px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.check_in_email {
+  margin: 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.check_in_email--name_email_mobile {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.check_in_email--name_email_mobile p {
+  color: #555555;
+}
+
+.check_in_email--name_email_mobile input {
+  margin-left: 30px;
+  width: 130px;
+  background-color: #ffffff;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.horizontal--line__last {
+  margin: 10px 0;
+}
+
+.submit_n_reset {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.submit_n_reset--buttons {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.submit_n_reset--buttons button:first-of-type {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0088cc;
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+
+.submit_n_reset--buttons button:last-of-type {
+  margin-left: 10px;
+  padding: 6px 12px;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
+/*# sourceMappingURL=editCompanyInfo.css.map */
