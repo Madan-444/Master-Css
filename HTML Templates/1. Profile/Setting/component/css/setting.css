@@ -1,0 +1,324 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+p {
+  color: #4d5573;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.setting {
+  margin: 100px 0 0 300px;
+  padding: 20px;
+  min-height: 1350px;
+  width: 68.88%;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: white;
+  border: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lead_reminder_date, .quote_expire_date, .invoice_expire_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lead_reminder_date--text, .quote_expire_date--text, .invoice_expire_date--text {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lead_reminder_date > p, .quote_expire_date > p, .invoice_expire_date > p {
+  width: 60%;
+  margin-left: 5%;
+}
+
+.lead_reminder_date > p input, .quote_expire_date > p input, .invoice_expire_date > p input {
+  width: 10%;
+  height: 34px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.lead_reminder_date > p span, .quote_expire_date > p span, .invoice_expire_date > p span {
+  margin-left: 30px;
+}
+
+.quote_expire_date {
+  margin-top: 20px;
+}
+
+.invoice_expire_date {
+  margin-top: 20px;
+}
+
+.gst_setting {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gst_setting--text {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gst_setting > p {
+  width: 60%;
+  margin-left: 5%;
+}
+
+.input-2 {
+  margin: 0 4px 0 30px;
+}
+
+.input-3 {
+  margin: 0 4px 0 30px;
+}
+
+.additional_field_1, .additional_field_2, .additional_field_3, .creditcard_paymentCharge {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.additional_field_1--text, .additional_field_2--text, .additional_field_3--text, .creditcard_paymentCharge--text {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.additional_field_1 > p, .additional_field_2 > p, .additional_field_3 > p, .creditcard_paymentCharge > p {
+  margin-left: 5%;
+  position: relative;
+}
+
+.additional_field_1 > p input, .additional_field_2 > p input, .additional_field_3 > p input, .creditcard_paymentCharge > p input {
+  height: 34px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.additional_field_1 > p span, .additional_field_2 > p span, .additional_field_3 > p span, .creditcard_paymentCharge > p span {
+  margin-left: 45px;
+}
+
+.checkbox_input {
+  margin-left: 30px;
+  position: absolute;
+}
+
+.field_1_description, .field_2_description {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.field_1_description--text, .field_2_description--text {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.field_1_description > p, .field_2_description > p {
+  margin-left: 5%;
+  width: 50%;
+}
+
+.field_1_description > p textarea, .field_2_description > p textarea {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.payment_option_invoice {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+.payment_via_phone {
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+.payment_via_phone span {
+  margin-left: 5px;
+}
+
+.enter_phone_no, .payment_via_online, .payment_via_paypal, .bank_transfer, .BSB, .account_number, .mail_to, .mail_to_address {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.enter_phone_no--text, .payment_via_online--text, .payment_via_paypal--text, .bank_transfer--text, .BSB--text, .account_number--text, .mail_to--text, .mail_to_address--text {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enter_phone_no > p, .payment_via_online > p, .payment_via_paypal > p, .bank_transfer > p, .BSB > p, .account_number > p, .mail_to > p, .mail_to_address > p {
+  margin-left: 5%;
+  width: 50%;
+}
+
+.enter_phone_no > p input, .payment_via_online > p input, .payment_via_paypal > p input, .bank_transfer > p input, .BSB > p input, .account_number > p input, .mail_to > p input, .mail_to_address > p input {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.display_payment_option {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.display_payment_option--text {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display_payment_option > p {
+  margin-left: 5%;
+}
+
+.submit_n_reset {
+  margin: 0px 0 50px 300px;
+  padding: 20px;
+  min-height: 50px;
+  width: 68.88%;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: rgba(226, 214, 214, 0.747);
+  border: 1px solid #eeeeee;
+}
+
+.submit_n_reset--container {
+  margin-left: 30%;
+}
+
+.submit_n_reset--container button:first-of-type {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0088cc;
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit_n_reset--container button:last-of-type {
+  margin-left: 10px;
+  padding: 6px 12px;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+/*# sourceMappingURL=setting.css.map */

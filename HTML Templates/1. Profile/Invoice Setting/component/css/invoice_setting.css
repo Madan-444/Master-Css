@@ -1,0 +1,85 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  color: #4d5573;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 22px;
+  font-size: 13px;
+  width: 25%;
+  padding: 3px;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.invoice_setting {
+  margin: 100px 0 0 200px;
+  min-height: 280px;
+  width: 68.88%;
+  background-color: #fdfdfd;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: white;
+  border: 1px solid #eeeeee;
+  padding: 15px;
+}
+
+.invoice_setting h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #4d5573;
+}
+
+.invoice_setting--container {
+  margin-top: 10px;
+  height: 170px;
+  width: 100%;
+  border: 3px solid #cccccc;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.invoice_setting--container__para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.invoice_setting--container__para span {
+  margin-left: 5px;
+}
+
+.invoice_setting--container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.invoice_setting--container__button button {
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0088cc;
+  border-color: #0088cc;
+}
+/*# sourceMappingURL=invoice_setting.css.map */

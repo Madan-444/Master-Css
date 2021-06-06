@@ -1,0 +1,44 @@
+@import "reset";
+
+body {
+  background-color: #f6f6f6;
+}
+p {
+  color: #4d5573;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.common__container {
+  margin: 100px 100px;
+  padding: 15px;
+  height: 370px;
+  width: 280px;
+  background: #fdfdfd;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  &--profile {
+      margin: 10px 0;
+      &__details {
+          padding: 0 10px;
+          span {
+              background-color: green;
+              padding: 1px 5px;
+              border-radius: .25em;
+              color: white;
+              font-size: 11px;
+          }
+      }
+  }
+  &--about {
+      margin-top: 20px;
+  }
+  &--download {
+      margin-top: 30px;
+      a {
+        color: #0088cc;
+        text-decoration: none;
+      }
+  }
+
+}

@@ -1,0 +1,59 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+p {
+  color: #4d5573;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.common__container {
+  margin: 100px 100px;
+  padding: 15px;
+  height: 370px;
+  width: 280px;
+  background: #fdfdfd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.common__container--profile {
+  margin: 10px 0;
+}
+
+.common__container--profile__details {
+  padding: 0 10px;
+}
+
+.common__container--profile__details span {
+  background-color: green;
+  padding: 1px 5px;
+  border-radius: .25em;
+  color: white;
+  font-size: 11px;
+}
+
+.common__container--about {
+  margin-top: 20px;
+}
+
+.common__container--download {
+  margin-top: 30px;
+}
+
+.common__container--download a {
+  color: #0088cc;
+  text-decoration: none;
+}
+/*# sourceMappingURL=common.css.map */
