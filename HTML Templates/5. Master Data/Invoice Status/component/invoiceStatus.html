@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap icons cdn links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/invoiceStatus.css" />
+    <!-- <i class="bi bi-grid-fill"></i> -->
+    <!-- <i class="bi bi-check-circle-fill"></i> -->
+    <!-- <i class="bi bi-trash"></i> -->
+    
+    <title>Employee Level</title>
+  </head>
+  <body>
+    <div class="group_list">
+      <h4>Employeee Level List</h4>
+    </div>
+    <div class="user_groups">
+      <div class="user_groups--heading">
+        <button>
+          Add <i class="bi bi-plus c-plus" ></i>
+        </button>
+        <select name="" id="">
+            <option value="">More</option>
+            <option value="">Delete Marked</option>
+            <option value="">Mark as Published</option>
+            <option value="">Mark as Deleted</option>
+        </select>
+      </div>
+      <div class="user_groups--filter_n_search">
+        <div class="user_groups--filter_n_search--filter">
+            <select name="" id="">
+                <option value="">10</option>
+                <option value="">25</option>
+                <option value="">50</option>
+                <option value="">100</option>
+              </select>
+              <span>records per page</span>
+        </div>
+        <div class="user_groups--filter_n_search--search">
+            <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <div class="table-container">
+        <table class="table_x">
+          <thead>
+            <th class="checkbox"><input type="checkbox"></th>
+            <th class="title">Title</th>
+            <th class="actions">Actions</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>New Changes</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Invoiced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Cancelled</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Paid</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Paid</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Paid</td>
+              <td></td>
+            </tr>
+           
+          </tbody>
+        </table>
+       <div class="pagination">
+        <p>Showing 1 to 6 of 6 entries</p>
+        <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+       </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+  </body>
+</html>
